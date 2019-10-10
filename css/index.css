@@ -247,3 +247,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .button {
+  width: 20rem;
+  height: 4.5rem;
+}
