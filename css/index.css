@@ -168,27 +168,47 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav {
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px dashed gray;
+  width: 100%;
+}
+.navContainer .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80rem;
-  padding: 2.5rem;
+  margin: 2% 0;
+  width: 50%;
 }
-.nav h1 {
-  font-size: 4rem;
+.navContainer .navBar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
 }
-.nav nav a {
+.navContainer .navBar nav a {
+  font-size: 1.6rem;
   text-decoration: none;
-  align-content: flex-end;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  font-family: "Robot", sans-serif;
   color: black;
-  margin: 20px;
+}
+@media (max-width: 500px) {
+  .navContainer .navBar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navContainer .navBar h1 {
+    font-size: 3rem;
+  }
+  .navContainer .navBar nav {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
 }
 .footer {
   width: 100%;
@@ -200,6 +220,19 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .intro {
+  border-bottom: 2px dashed gray;
+  width: 50%;
+}
+header .intro .text {
+  padding: 3% 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -247,7 +280,78 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .button {
-  width: 20rem;
-  height: 4.5rem;
+.home .content-pick .destination .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  height: 15%;
+  margin-bottom: 15%;
+  font-size: 2rem;
+  color: white;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
+  border: 1px solid #17A2B8;
+}
+@media (max-width: 500px) {
+  header .intro {
+    width: 90%;
+  }
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-section .text-content {
+    width: 90%;
+    padding: 0;
+  }
+  .home .content-section .img-content {
+    width: 90%;
+    padding: 0;
+  }
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .content-destination {
+    width: 90%;
+  }
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 70%;
+  }
+  .home .content-pick .destination .btn {
+    margin-bottom: 0;
+    width: 100%;
+    padding: 3% 0;
+  }
+}
+.bottomBorder {
+  border-bottom: 2px dashed gray;
+}
+.borderTest {
+  border: 1px solid black;
+}
+.btnStyle {
+  background-color: #17A2B8;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  height: 15%;
+  margin-bottom: 15%;
+  font-size: 2rem;
+  color: white;
+}
+.hovAnim {
+  background-color: #FFFFFF;
+  color: #17A2B8;
+  border: 1px solid #17A2B8;
 }
