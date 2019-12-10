@@ -19,7 +19,13 @@
 //Media Query
 @mobile:~"(max-width: 500px)";
 
-//Escaped Values
-@mobile: ~"(max-width:500px)";
-
 //Parametrix mixin
+.button(@padding, @radius, @background, @color, @border) {
+
+    padding: @padding; 
+    border-radius: @radius; 
+    background: @background; 
+    color: @color; 
+    border: @border;
+       
+    }
