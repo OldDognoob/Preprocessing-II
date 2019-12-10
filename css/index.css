@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: mediumaquamarine;
 }
 h1,
 h2,
@@ -227,6 +228,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: lightskyblue;
 }
 header .intro {
   border-bottom: 2px dashed gray;
